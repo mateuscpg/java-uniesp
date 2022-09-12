@@ -3,22 +3,25 @@ package com.uniesp.aula1.padroesdeprojetos.aula3;
 public class Main {
     public static void main(String[] args) {
 
+        Funcionario funcionario = new Funcionario("Lucas Lucena", "01/10/1992", "Avenida Brasil", "3247-2882", "Estudante", 202120222, 50000, "01/01/2020");
+        Cliente cliente = new Cliente("Mateus Correia", "08/05/2001", "Avenida Sei lá", "4002-8922", "Dev", "007");
 
-        Pessoa funcionario = new Pessoa(0027,"Mateus Correia", "27 de janeiro de 2004", "Avenida marta pacheco","(83) 3242-8922", "Dev", 5000, "06/06/2022");
-        System.out.println("Nome do funcionário: " + funcionario.nome + "\nMatrícula do funcionário: " + funcionario.matricula + "" + "\nData de Nascimento do funcionário: " + funcionario.dataNascimento + "\nEndereço do funcionário: " + funcionario.endereco + "\nContato do funcionário: " + funcionario.contato + "\nCargo do funcionário: " + funcionario.cargo + "\nSalário do funcionário: " + funcionario.salario + "\nData de Admissão do funcionário: " + funcionario.dataAdmissao);
+        System.out.println("Dados do Funcionário");
+        System.out.println("Nome: " + funcionario.getNome());
+        System.out.println("Data de Nascimento: " + funcionario.getDataNascimento());
+        System.out.println("Endereço: " + funcionario.getEndereco());
+        System.out.println("Telefone para contato: " + funcionario.getTelsContato());
+        System.out.println("Cargo: " + funcionario.getCargo());
+        System.out.println("Matrícula: " + funcionario.getMatricula());
+        System.out.println("Salário: " + funcionario.getSalario());
+        System.out.println("Data de Admissão: " + funcionario.getDataAdmissao());
 
-        funcionario.promoverCargo("cargo");
-        funcionario.reajustarSalario();
-        System.out.println("O novo cargo do funcionário é: "+funcionario.cargo);
-        System.out.println("O novo salario do funcionario é: "+funcionario.salario);
-
-
-
-        Pessoa cliente = new Pessoa(2707,"alexia", "12.04.1981", "Altiplano", "(54) 9 8727-3415", "Diretora", "analista de sistemas");
-        System.out.println("Codigo do cliente: " +cliente.codigo+"\nNome do cliente: "+cliente.nome+"\nData de Nascimento do cliente: "+ cliente.dataNascimento + "\nEndereço do cliente: "+ cliente.endereco +"\nContato do cliente: "+ cliente.contato +"\nCargo do cliente: "+ cliente.cargo +"\nProfissão do cliente: " +cliente.profissao);
-
-
-
-
+        System.out.println("\n\nDados do Cliente");
+        System.out.println("Nome: " + cliente.getNome());
+        System.out.println("Data de Nascimento: " + cliente.getDataNascimento());
+        System.out.println("Endereço: " + cliente.getEndereco());
+        System.out.println("Telefone para contato: " + cliente.getTelsContato());
+        System.out.println("Cargo: " + cliente.getCargo());
+        System.out.println("Código: " + cliente.getCodigo());
     }
 }

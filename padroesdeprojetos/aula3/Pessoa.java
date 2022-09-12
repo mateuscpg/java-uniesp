@@ -1,48 +1,71 @@
 package com.uniesp.aula1.padroesdeprojetos.aula3;
 
-import java.util.Scanner;
 public class Pessoa {
-    int matricula;
-    int codigo;
-    String nome;
-    String dataNascimento;
-    String endereco;
-    String contato;
-    String cargo;
-    String profissao;
-    double salario;
-    String dataAdmissao;
-    public void promoverCargo(String cargo) {
-        Scanner ler = new Scanner(System.in);
-        System.out.println("Digite o seu novo cargo, patrão: ");
-        String promocao = ler.nextLine();
-        this.cargo = promocao;
-    }
-    public void reajustarSalario() {
-        Scanner ler = new Scanner(System.in);
-        System.out.println("Digite a bufunfa que você vai receber: ");
-        double salario = ler.nextDouble();
-        this.salario = salario;
+    protected String nome;
+    protected String dataNascimento;
+    protected String endereco;
+    protected String telsContato; // adicionar coleção
+    protected String cargo;
+
+    public Pessoa(String nome, String dataNascimento, String endereco, String telsContato, String cargo) {
+        this.nome = nome;
+        this.dataNascimento = dataNascimento;
+        this.endereco = endereco;
+        this.telsContato = telsContato;
+        this.cargo = cargo;
     }
 
-    public Pessoa(int matricula, String nome, String dataNascimento, String endereco, String contato, String cargo, double salario, String dataAdmissao){
-        this.matricula = matricula;
-        this.nome = nome;
-        this.dataNascimento = dataNascimento;
-        this.endereco = endereco;
-        this.contato = contato;
-        this.cargo = cargo;
-        this.salario = salario;
-        this.dataAdmissao = dataAdmissao;
+    public String getNome() {
+        return nome;
     }
-    public Pessoa(int codigo, String nome, String dataNascimento, String endereco, String contato, String cargo, String profissao) {
-        this.codigo = codigo;
+
+    public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public String getDataNascimento() {
+        return dataNascimento;
+    }
+
+    public void setDataNascimento(String dataNascimento) {
         this.dataNascimento = dataNascimento;
+    }
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(String endereco) {
         this.endereco = endereco;
-        this.contato = contato;
+    }
+
+    public String getTelsContato() {
+        return telsContato;
+    }
+
+    public void setTelsContato(String telsContato) {
+        this.telsContato = telsContato;
+    }
+
+    public String getCargo() {
+        return cargo;
+    }
+
+    public void setCargo(String cargo) {
         this.cargo = cargo;
-        this.profissao = profissao;
+    }
+
+    public void cadastrar(){
+
+    }
+
+    public void obterIdade(){
+
+    }
+
+    public void reajustarSalario(double percentual, double real){
+    }
+
+    public void promover(String novoCargo, String cargo){
     }
 }
-
