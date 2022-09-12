@@ -27,6 +27,15 @@ public class Pessoa {
 
     public Pessoa(int matricula, String nome, String dataNascimento, String endereco, String contato, String cargo, double salario, String dataAdmissao){
         this.matricula = matricula;
+        this.nome = nome;
+        this.dataNascimento = dataNascimento;
+        this.endereco = endereco;
+        this.contato = contato;
+        this.cargo = cargo;
+        this.salario = salario;
+        this.dataAdmissao = dataAdmissao;
+    }
+    public Pessoa(int codigo, String nome, String dataNascimento, String endereco, String contato, String cargo, String profissao) {
         this.codigo = codigo;
         this.nome = nome;
         this.dataNascimento = dataNascimento;
@@ -34,16 +43,6 @@ public class Pessoa {
         this.contato = contato;
         this.cargo = cargo;
         this.profissao = profissao;
-        this.salario = salario;
-        this.dataAdmissao = dataAdmissao;
-    }
-    public Pessoa(int codigo, String nome, String dataNascimento, String endereco, String contato, String cargo, String profissao) {
-        this.nome = nome;
-        this.dataNascimento = dataNascimento;
-        this.endereco = endereco;
-        this.contato = contato;
-        this.cargo = cargo;
-
     }
 }
 
