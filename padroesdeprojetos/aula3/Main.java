@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
 
-        Pessoa funcionario = new Pessoa(0027,"Mateus", "08 de maio de 2001", "Vou dizer nada","(83) 0000-0000", "Dev", 5000, "06/06/2022");
+        Pessoa funcionario = new Pessoa(0027,"Mateus Correia", "27 de janeiro de 2004", "Avenida marta pacheco","(83) 3242-8922", "Dev", 5000, "06/06/2022");
         System.out.println("Nome do funcionário: " + funcionario.nome + "\nMatrícula do funcionário: " + funcionario.matricula + "" + "\nData de Nascimento do funcionário: " + funcionario.dataNascimento + "\nEndereço do funcionário: " + funcionario.endereco + "\nContato do funcionário: " + funcionario.contato + "\nCargo do funcionário: " + funcionario.cargo + "\nSalário do funcionário: " + funcionario.salario + "\nData de Admissão do funcionário: " + funcionario.dataAdmissao);
 
         funcionario.promoverCargo("cargo");
